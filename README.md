@@ -1,16 +1,16 @@
 # soupescador
 Sistema de gerenciamento de pesca
 
-#### O sistema fpi escrto na linguagem Python 3, com o framework Django, o qual também gerencia o banco de dados SQLite.
+#### O sistema foi desenvolvido na linguagem Python 3, com o framework Django, o qual também gerencia o banco de dados SQLite.
 
 ![Modelo ER](https://github.com/tatiane-medeiros/soupescador/blob/master/er.png?raw=true)
 
 Componentes:
 
 ### CRUD de pescarias: 
--data e hora;
--localização da pescaria;
--grupo de pescadores
+- data e hora;
+- localização da pescaria;
+- grupo de pescadores
 
 ### CRUD de peixes: 
 - massa (kg);
@@ -18,7 +18,7 @@ Componentes:
 
 ### CRUD de usuários: 
 - nome;
--cpf;
--telefone;
--endereço 
+- cpf;
+- telefone;
+- endereço 
 
