@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{pescaria.local}} </title>
+  </head>
+<h3>{{ pescaria.local }}</h3>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<p>{{ pescaria.datetime }}</p>
+
+{% for peixe in pescaria.peixe_set.all %}
+    <input type="radio" name="peixe" id="peixe{{ forloop.counter }}" value="{{ peixe.id }}">
+    <label for="peixe{{ forloop.counter }}">{{ peixe.weight }}</label><br>
+{% endfor %}
+
+</form>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+{% load static %}
+
+  <head>
+    <meta charset="utf-8">
+    <title>page</title>
+  </head>
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+    {% if latest_pescaria_list %}
+    <ul>
+    {% for pescaria in latest_pescaria_list %}
+     <li><a href="{% url 'pescaria:detail' pescaria.id %}">{{ pescaria.local }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Nenhuma pescaria.</p>
+{% endif %}
+
+</html>
